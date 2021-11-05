@@ -1,0 +1,15 @@
+CREATE VIEW cancoes_premium AS 
+SELECT 
+M.TITULO_MUSICA AS `nome`,
+COUNT(H.ID_MUSICA) AS `reproducoes`
+FROM 
+SpotifyClone.Musicas AS M
+INNER JOIN 
+SpotifyClone.Histórico AS H ON H.ID_MUSICA = M.ID_MUSICA
+INNER JOIN 
+SpotifyClone.Usuário AS U ON H.USER_ID = U.USER_ID
+INNER JOIN 
+SpotifyClone.Plano AS P ON P.PLANO_ID = U.PLANO_ID
+WHERE U.PLANO_ID = 2 OR U.PLANO_ID = 3 
+GROUP BY M.TITULO_MUSICA
+ORDER BY `nome`;
