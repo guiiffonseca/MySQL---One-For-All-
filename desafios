@@ -1,0 +1,23 @@
+
+1 - Normalize as tabelas para a 3ª Forma Normal,
+
+2 - Exibe as estatísticas musicais,
+
+3 - Exibe o histórico de reprodução para cada pessoa usuária,
+
+4 - Exibe top 3 artistas com maior quantidade de pessoas seguidoras,
+
+5 - Exibe top 2 hits mais tocados no momento,
+
+6 - Exibe o relatório de faturamento da empresa,
+
+7 - Exibe uma relação de todos os álbuns produzidos por cada artista,
+
+8 - Crie uma trigger chamada `trigger_usuario_delete` que deve ser disparada sempre que uma pessoa usuária for excluída do banco de dados, refletindo essa exclusão em todas as tabelas que ela estiver,
+
+9 - Crie uma procedure chamada `albuns_do_artista` que, dado o nome da pessoa artista, retorna todos seus álbuns,
+
+10 - Crie uma function chamada de `quantidade_musicas_no_historico` que exibe a quantidade de músicas que estão presente atualmente no histórico de reprodução de uma pessoa usuária,
+
+11 - Crie uma `VIEW` chamada `cancoes_premium` que exiba o nome e a quantidade de vezes que cada canção foi tocada por pessoas usuárias do plano familiar ou universitário,
+
